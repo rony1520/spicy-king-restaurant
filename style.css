@@ -1,0 +1,395 @@
+html{
+scroll-behavior: smooth;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+}
+
+img{
+    width: 200px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wraper{
+    max-width: 65%;
+    width: 100%;
+}
+/*---------------------
+-----------------------
+header area Start 
+-----------------------
+---------------------- */
+#header-area{
+    display: flex;
+    flex-direction: row;
+    background: #145C57;
+    padding: 15px 20px;
+}
+#header-area .logo{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: start;
+
+}
+
+#header-area .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+#header-area .logo .utensils {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 2.7rem;
+}
+#header-area .menu{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+#header-area .menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #ffffff;
+}
+#header-area .menu ul li a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+#header-area .menu ul li a:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+/* 
+---------------------
+-----------------------
+header area End 
+-----------------------
+----------------------
+*/
+
+/* ---------------------
+-----------------------
+main area Start 
+-----------------------
+---------------------- */
+/* hero area Start */
+#hero-area{
+    background: url('img/baner.jpg') no-repeat fixed center/cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero-area h2{
+    width: 70%;
+    background: #F1E803;
+    color: #000000;
+    font-family: "Handlee", cursive;
+    font-size: 3.4rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#hero-area p{
+    width: 50%;
+    background: #006100;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#hero-area a{
+    background: #006100;
+    color: #ffffff;
+    padding: 8px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#hero-area a:hover{
+    transform: scale(1.2);
+}
+/* hero area End */
+
+/* about area Start */
+#about{
+    text-align: center;
+    padding: 30px;
+}
+#about h3{
+    width: 40%;
+    font-size: 1.5rem;
+    background:#310100;
+    color: #ffffff;
+    margin: 0 auto 10px;
+    padding: 2px 0;
+    border-radius: 10px;
+}
+/* about area End */
+
+/* food menu area Start */
+#food-menu{
+    padding: 20px;
+}
+#food-menu .card{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+#food-menu .card .card-content{
+    background: #A5A4A4;
+    text-align: center;
+    transition: 0.5s;
+}
+#food-menu .card .card-content:hover{
+    transform: scale(1.1);
+}
+#food-menu .card .card-content img{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+#food-menu .card .card-content h3{
+    background: #005C00;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+#food-menu .card .card-content p{
+    margin: 15px 0;
+}
+/* food menu area End */
+
+/* contact Start */
+#contact{
+    display: flex;
+    gap: 20px;
+    background: #4C4E70;
+    padding: 22px;
+}
+#contact .map{
+    width: 66%;
+}
+#contact .map iframe{
+    width: 100%;
+    height: 250px;
+}
+
+#contact .contact-details{
+    width: 34%;
+    padding: 22px;
+    text-align: center;
+    color: #ffffff;
+}
+#contact .contact-details h4, 
+#contact .contact-details address,
+#contact .contact-details .spacing{
+    margin-bottom: 20px;
+}
+#contact .contact-details h6{
+    font-size: 1rem;
+}
+/* contact End */
+/* ---------------------
+-----------------------
+main area End 
+-----------------------
+---------------------- */
+
+/*
+-----------------------
+-----------------------
+footer area Start 
+-----------------------
+-----------------------
+*/
+#footer-area{
+    display: flex;
+    flex-direction: row;
+    background: #060930;
+    color: #ffffff;
+    align-items: center;
+    justify-content: end;
+    padding: 30px;
+}
+#footer-area .copyright{
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#footer-area .copyright p{
+    font-size: 0.9rem;
+}
+#footer-area .social-icon{
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#footer-area .social-icon ul{
+    list-style: none;
+    display: flex;
+}
+#footer-area .social-icon ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 12px;
+    
+}
+
+#footer-area .social-icon ul li a .icone-style{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#footer-area .social-icon ul li a .icone-style:hover{
+    background: #380000;
+    transform: scale(1.2);
+}
+
+/*
+-----------------------
+-----------------------
+footer area End 
+-----------------------
+-----------------------
+*/
+
+
+/*
+-----------------------
+-----------------------
+Responsive
+-----------------------
+-----------------------
+*/
+
+/* Large */
+@media (max-width: 1200px) {}
+
+/* Medium (tablet) */
+@media (max-width: 992px) {
+    .wraper {
+    max-width: 95%;
+}
+#footer-area .copyright {
+    flex-basis: 50%;
+}
+#footer-area .social-icon {
+    flex-basis: 50%;
+}
+}
+
+/* Small (mobile landscape) */
+@media (max-width: 768px) {
+    .wraper {
+    max-width: 100%;
+}
+#food-menu .card {
+    flex-wrap: wrap;
+}
+#food-menu .card .card-content {
+    flex-basis: 45%;
+}
+#header-area .menu ul li a {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+}
+
+/* Extra small (mobile) */
+@media (max-width: 576px) {
+    #header-area {
+    flex-direction: column;
+}
+#header-area .logo {
+    flex-basis: 100%;
+    justify-content: center;
+}
+#header-area .menu {
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    #header-area .menu ul {
+    margin-top: 20px;
+    flex-direction: column;
+}
+#header-area .menu ul li{
+    width: 100%;
+}
+#header-area .menu ul li a {
+    display: flex;
+    justify-content: center;
+    background: #ffe4c4;
+    color: #000000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#header-area .menu ul li a:hover{
+    transform: scale(1);
+}
+
+#food-menu .card {
+    flex-direction: column;
+}
+#contact {
+    flex-direction: column;
+}
+#contact .map {
+    width: 100%;
+}
+#contact .contact-details {
+    width: 100%;
+}
+
+#footer-area {
+    flex-direction: column;
+}
+#footer-area .copyright {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+#footer-area .social-icon {
+    flex-basis: 100%;
+}
+}
