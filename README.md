@@ -6,6 +6,7 @@ A simple, modern, and responsive restaurant website built with **HTML**, **CSS**
 
 ## 🌐 Live Preview
 You can view the project live in your browser by opening the `index.html` file.
+or Open this link : https://rony1520.github.io/spicy-king-restaurant
 
 ---
 
